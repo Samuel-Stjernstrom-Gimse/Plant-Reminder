@@ -18,5 +18,13 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^x.x.x"
+    // other dependencies...
+  }
+  
 }

@@ -1,0 +1,107 @@
+:root {
+    --bgColor: #87b18b;
+    --mainColor: #002926;
+    --mainColorLight: #02413d;
+    --textColor: #f6f6fd;
+    --textColorDark: #a7a7a7;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+body {
+    background-color: var(--bgColor);
+}
+
+
+
+
+#plus {
+    display: flex;
+    color: ghostwhite;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    background-color: var(--mainColorLight);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#inputForm {
+    visibility: hidden;
+    text-align: center;
+    position: absolute;
+    height: 50vh;
+    aspect-ratio: 9/16;
+    background-color: var(--mainColor);
+    left: 45%;
+    top: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--textColor);
+    font-family: Arial;
+}
+::placeholder {
+    color: var(--textColorDark);
+}
+.input {
+    color: ghostwhite;
+    border: none;
+    background-color: var(--mainColorLight);
+    border-radius: 3px;
+    text-align: center;
+}
+
+button {
+    height: 30px;
+}
+
+.card {
+    background-color: var(--mainColor);
+    height: 344px;
+    width: 271px;
+    color: var(--textColor);
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px ;
+    font-family: Arial;
+}
+
+#section-1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.water-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50%;
+    font-size: 10px;
+}
+
+.water-picture {
+    height: 30px;
+}
+
+.water-div {
+    display: flex;
+    flex-direction: row;
+}

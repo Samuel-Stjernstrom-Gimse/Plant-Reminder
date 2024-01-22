@@ -1,2 +1,44 @@
 "use strict";
+const plus = document.getElementById('plus');
+const newPlantForm = document.getElementById('inputForm');
+const button = document.getElementById('button');
+let nameInput = document.getElementById('plant-name-input');
+let numberInput = document.getElementById('plant-number-input');
+let infoInput = document.getElementById('plant-info-input');
+const section = document.getElementById('section-1');
+plus.addEventListener('click', () => {
+    newPlantForm.style.visibility = 'visible';
+});
+button.addEventListener('click', () => {
+    const newPlantCard = document.createElement('div');
+    const plantName = document.createElement('h1');
+    const waterContainer = document.createElement('div');
+    const plantWaterLevel = document.createElement('h3');
+    const plantWaterLevelPicture = document.createElement('img');
+    const plantWaterLevelDiv = document.createElement('div');
+    const plantWaterDays = document.createElement('h3');
+    const plantWaterDaysPicture = document.createElement('img');
+    const plantWaterDaysDiv = document.createElement('div');
+    const plantPicture = document.createElement('img');
+    const plantInfo = document.createElement('p');
+    newPlantCard.className = 'card';
+    waterContainer.className = 'water-container';
+    plantName.textContent = nameInput.value;
+    plantWaterLevel.textContent = `${(numberInput.valueAsNumber / numberInput.valueAsNumber) * 100}%`;
+    plantWaterLevelPicture.src = '/assets/images/water-drop.png';
+    plantWaterLevelPicture.className = 'water-picture';
+    plantWaterLevelDiv.className = 'water-div';
+    plantWaterDays.textContent = `${numberInput.valueAsNumber} Days`;
+    plantWaterDaysPicture.src = '/assets/images/water-can.png';
+    plantWaterDaysPicture.className = 'water-picture';
+    plantWaterDaysDiv.className = 'water-div';
+    plantInfo.textContent = infoInput.value;
+    plantPicture.src = '/assets/images/plant.png';
+    plantWaterLevelDiv.append(plantWaterLevelPicture, plantWaterLevel);
+    plantWaterDaysDiv.append(plantWaterDaysPicture, plantWaterDays);
+    waterContainer.append(plantWaterLevelDiv, plantWaterDaysDiv);
+    section.append(newPlantCard);
+    newPlantCard.append(plantName, waterContainer, plantPicture, plantInfo);
+    newPlantForm.style.visibility = 'hidden';
+});
 //# sourceMappingURL=script.js.map
