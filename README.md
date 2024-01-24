@@ -1,5 +1,34 @@
 https://samuelkodehode.github.io/PlantReminderTs/
 
+# My Plant Care App 🌱💧
+
+Welcome to my plant care app, where you can keep track of your plants and ensure they receive the care they need. This app allows you to add and manage information about your plants, including their names, watering needs, and additional details.
+
+## Features
+
+- **Add Plants:** Easily add new plants to your collection.
+- **Track Watering:** Monitor the water level and days since the last watering.
+- **Plant Cards:** Beautifully designed cards for each plant in your collection.
+
+## Getting Started
+
+1. Click the '+' button to add a new plant.
+2. Fill in the plant details in the form.
+3. Click 'Submit' to save the plant information.
+
+## Plant Humor 🌿😄
+
+Why did the plant go to therapy?
+
+It had too many issues with its roots!
+
+## Forgetting Humor 🤔💭
+
+I often forget to water my plants...
+
+But they always remember, and they're not afraid to show it!
+
+
 # TypeScript Project Template Readme
 
 ## Overview
