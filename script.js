@@ -44,15 +44,15 @@ function buildCards(name, waterLevel, waterDays, info) {
     waterContainer.className = 'water-container';
     plantName.textContent = name;
     plantWaterLevel.textContent = `${(waterLevel / waterLevel) * 100}%`;
-    plantWaterLevelPicture.src = '/assets/images/water-drop.png';
+    plantWaterLevelPicture.src = 'assets/images/water-drop.png';
     plantWaterLevelPicture.className = 'water-picture';
     plantWaterLevelDiv.className = 'water-div';
     plantWaterDays.textContent = `${waterDays} Days`;
-    plantWaterDaysPicture.src = '/assets/images/water-can.png';
+    plantWaterDaysPicture.src = 'assets/images/water-can.png';
     plantWaterDaysPicture.className = 'water-picture';
     plantWaterDaysDiv.className = 'water-div';
     plantInfo.textContent = info;
-    plantPicture.src = '/assets/images/plant.png';
+    plantPicture.src = 'assets/images/plant.png';
     plantWaterLevelDiv.append(plantWaterLevelPicture, plantWaterLevel);
     plantWaterDaysDiv.append(plantWaterDaysPicture, plantWaterDays);
     waterContainer.append(plantWaterLevelDiv, plantWaterDaysDiv);
