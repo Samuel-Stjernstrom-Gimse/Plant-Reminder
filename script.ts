@@ -11,9 +11,11 @@ const storedPlants = localStorage.getItem('plant')
 if (storedPlants) {
 	allPlantsArray = JSON.parse(storedPlants)
 	}
+
 plus.addEventListener('click', ():void => {
 	newPlantForm.style.visibility = 'visible'
 })
+
 button.addEventListener('click', (): void => {
 	const plantObject: {name: string, num: number, info: string} = {
 		name: nameInput.value,
@@ -49,17 +51,17 @@ function buildCards(name: string, waterLevel: number, waterDays: number, info: s
 	plantName.textContent = name
 
 	plantWaterLevel.textContent = `${(waterLevel / waterLevel) * 100}%`
-	plantWaterLevelPicture.src = '/assets/images/water-drop.png'
+	plantWaterLevelPicture.src = 'assets/images/water-drop.png'
 	plantWaterLevelPicture.className = 'water-picture'
 	plantWaterLevelDiv.className = 'water-div'
 
 	plantWaterDays.textContent = `${waterDays} Days`
-	plantWaterDaysPicture.src = '/assets/images/water-can.png'
+	plantWaterDaysPicture.src = 'assets/images/water-can.png'
 	plantWaterDaysPicture.className = 'water-picture'
 	plantWaterDaysDiv.className = 'water-div'
 
 	plantInfo.textContent = info
-	plantPicture.src = '/assets/images/plant.png'
+	plantPicture.src = 'assets/images/plant.png'
 
 	plantWaterLevelDiv.append(plantWaterLevelPicture, plantWaterLevel)
 	plantWaterDaysDiv.append(plantWaterDaysPicture, plantWaterDays)
