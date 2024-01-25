@@ -1,9 +1,10 @@
 :root {
-    --bgColor: #87b18b;
-    --mainColor: #002926;
-    --mainColorLight: #02413d;
+    --bgColor: #021f2a;
+    --bgColorDark: #010f12;
+    --mainColor: #00454c;
+    --mainColorLight: #01a2b5;
     --textColor: #f6f6fd;
-    --textColorDark: #a7a7a7;
+    --textColorDark: #295a79;
 }
 
 
@@ -30,12 +31,16 @@ body {
     position: fixed;
     bottom: 5%;
     right: 5%;
-    background-color: var(--mainColorLight);
+    background-color: var(--mainColor);
     align-items: center;
     justify-content: center;
     cursor: pointer;
     font-size: 50px;
+    box-shadow: 0 0 10px var(--bgColorDark);
+}
 
+#plus:active {
+    background-color: var(--mainColorLight) ;
 }
 
 #inputForm {
@@ -46,20 +51,21 @@ body {
     aspect-ratio: 12/16;
     background-color: var(--mainColor);
     right: 2%;
-    top: 34%;
-    padding: 10px;
+    top: 10%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: var(--textColor);
     font-family: Arial, serif;
     font-size: 20px;
-    box-shadow: 4px 2px 30px #d6fff7;
     border-radius: 5px;
     z-index: 1000;
+    justify-content: space-around;
+    box-shadow: 0 0 10px var(--bgColor);
 }
 ::placeholder {
-    color: var(--textColorDark);
+    color: var(--bgColor);
 }
 .input {
     color: ghostwhite;
@@ -68,15 +74,21 @@ body {
     border-radius: 3px;
     text-align: center;
     font-size: 20px;
+    padding: 5px;
 }
 
 button {
     height: 30px;
 }
 
+button:active {
+    background-color: #00fff8;
+    color: #121c1c;
+}
+
 .card {
     background-color: var(--mainColor);
-    height: 344px;
+    height: 370px;
     width: 271px;
     color: var(--textColor);
     text-align: center;
@@ -84,7 +96,14 @@ button {
     border-radius: 4px ;
     font-family: Arial, serif;
     font-size: 20px;
+    box-shadow: 0 0 10px var(--bgColorDark);
+    padding-bottom: 30px;
 
+}
+
+.card:hover {
+    box-shadow: 0 0 30px #05ff00;
+    transition: 0.2s;
 }
 p {
     margin-top: 20px;
@@ -122,4 +141,5 @@ p {
 .water-div {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }

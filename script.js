@@ -15,6 +15,7 @@ plus.addEventListener('click', () => {
     newPlantForm.style.visibility = 'visible';
 });
 button.addEventListener('click', () => {
+    let time = new Date().getTime();
     const plantObject = {
         name: nameInput.value,
         num: numberInput.valueAsNumber,

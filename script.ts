@@ -8,6 +8,7 @@ const section = document.getElementById('section-1') as HTMLDivElement
 let allPlantsArray: any[] = []
 const storedPlants = localStorage.getItem('plant')
 
+
 if (storedPlants) {
 	allPlantsArray = JSON.parse(storedPlants)
 	}
@@ -17,6 +18,9 @@ plus.addEventListener('click', ():void => {
 })
 
 button.addEventListener('click', (): void => {
+	let time = new Date().getTime()
+	
+
 	const plantObject: {name: string, num: number, info: string} = {
 		name: nameInput.value,
 		num: numberInput.valueAsNumber,
